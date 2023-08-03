@@ -1,0 +1,15 @@
+function findMax(numbers) {
+  if (!Array.isArray(numbers) || numbers.length === 0) {
+    return undefined; // Return undefined for empty or non-array inputs
+  }
+
+  let maxNumber = numbers[0]; // Assume the first element is the maximum
+
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > maxNumber) {
+      maxNumber = numbers[i]; // Update maxNumber if a larger element is found
+    }
+  }
+
+  return maxNumber;
+}
