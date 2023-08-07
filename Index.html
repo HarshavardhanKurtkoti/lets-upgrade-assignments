@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    .product-card {
+      flex: 1;
+      max-width: 300px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      background-color: white;
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .sidebar {
+      flex: 0.3;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Product Showcase</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="product-card">
+      <img src="product1.jpg" alt="Product 1">
+      <h2>Product 1</h2>
+      <p>Description of Product 1.</p>
+    </div>
+    <div class="product-card">
+      <img src="product2.jpg" alt="Product 2">
+      <h2>Product 2</h2>
+      <p>Description of Product 2.</p>
+    </div>
+    <div class="product-card">
+      <img src="product3.jpg" alt="Product 3">
+      <h2>Product 3</h2>
+      <p>Description of Product 3.</p>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h2>Related Links</h2>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2023 Product Showcase. All rights reserved.
+  </footer>
+</body>
+</html>
